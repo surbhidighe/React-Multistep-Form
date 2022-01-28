@@ -1,0 +1,211 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter&display=swap);
+
+.App {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #e8eef1;
+  z-index: -1;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Inter", sans-serif;
+}
+
+/* heading and sub heading */
+.heading {
+  line-height: 13px;
+  text-align: center;
+  margin: 1.2rem 0rem;
+}
+.heading h1 {
+  font-size: 1.4rem;
+}
+.heading p {
+  font-size: 0.8rem;
+  color: gray;
+}
+.main_div {
+  width: 90vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  z-index: 1;
+  padding: 3rem 0rem;
+}
+
+/* logo css */
+.logo_div {
+  display: flex;
+  margin-bottom: 3rem;
+}
+.logo_div img {
+  height: 60px;
+}
+
+/* css for form container */
+.form-container {
+  margin: 1.1rem 0rem;
+}
+.form-container .button_container {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.form-container .button_container button {
+  width: 100%;
+  height: 40px;
+  background-color: #5b59ba;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.info-container {
+  height: 100%;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.info-container input {
+  margin: 5px 0px;
+  width: auto;
+  height: 40px;
+  padding-left: 5px;
+  font-size: 1rem;
+}
+input {
+  border: 2px solid #f7f7f7;
+  border-radius: 5px;
+}
+
+input:focus {
+  border: 0.5px solid #5b59ba;
+}
+
+.label1 {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+/* radio div css */
+.option_div {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin: auto;
+}
+.option_div h5 {
+  margin-bottom: 0px;
+}
+.option_div p {
+  color: gray;
+  font-size: 0.8rem;
+}
+
+/* progress bar */
+.progress-container::before {
+  content: "";
+  background: red;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: auto;
+  z-index: -1;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  max-width: 100%;
+  width: 430px;
+  margin-bottom: 20px;
+}
+
+.progress {
+  background: #5b59ba;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 1px;
+  width: 0%;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+/* progress circle */
+.circle {
+  color: #5b59ba;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #f7f7f7;
+  transition: 0.4s ease;
+}
+.active {
+  background: #5b59ba;
+  color: white;
+}
+.all {
+  background: #5b59ba;
+  color: white;
+}
+
+/* radio div css */
+.labl {
+  width: 48%;
+}
+.labl > input {
+  visibility: hidden;
+  position: absolute;
+}
+.labl > input + div {
+  cursor: pointer;
+  border: 2px solid lightgrey;
+  padding: 11px 21px;
+  border-radius: 10px;
+}
+.labl > input:checked + div {
+  background-color: white;
+  border: 2px solid #5b59ba;
+}
+/* font awsome icon */
+.fa {
+  font-size: 28px;
+}
+
+/* tick icon */
+.tick {
+  width: 90px;
+  margin: auto;
+}
+
+/* css for mobile */
+@media screen and (max-width: 767px) {
+  .info-container {
+    width: auto;
+  }
+  .progress-container {
+    width: 300px;
+  }
+  .heading h1 {
+    font-size: 1.1rem;
+  }
+}
